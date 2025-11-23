@@ -12,23 +12,36 @@ st.set_page_config(
 )
 
 # --- FONDO AZUL CLARO ---
-st.markdown(
-    """
-    <style>
-    body {
-        background-color: #DFF3FF !important;
-    }
-    .main {
-        background-color: #DFF3FF;
-    }
-    /* CAMBIAR TIPOGRAFÍA */
-    html, body, [class*="css"] {
-        font-family: 'Trebuchet MS', sans-serif;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+st.markdown("""
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;700&display=swap');
+
+html, body, .stApp {
+    background: linear-gradient(135deg, #d8eefe, #b7dbff);
+    color: #1e1e1e;
+    font-family: 'Mulish', sans-serif;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    color: #0b5fa4;
+    font-weight: 700;
+}
+
+/* Botones */
+.stButton>button {
+    background-color: #0b5fa4;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 0.6em 1.2em;
+    border: none;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
 
 # --- TÍTULO PERSONALIZADO ---
 st.title("💡 Sensor de Luz")
