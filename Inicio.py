@@ -17,26 +17,53 @@ st.markdown("""
 
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;700&display=swap');
 
+/* Fondo */
 html, body, .stApp {
     background: linear-gradient(135deg, #d8eefe, #b7dbff);
-    color: #1e1e1e;
+    color: #002147 !important; /* 🔵 Azul oscuro global */
     font-family: 'Mulish', sans-serif;
 }
 
 /* Títulos */
-h1, h2, h3 {
-    color: #0b5fa4;
+h1, h2, h3, h4, h5, h6 {
+    color: #001a33 !important;  /* Azul oscuro más intenso */
     font-weight: 700;
+}
+
+/* Texto en markdown, widgets, labels, tabs */
+p, label, span, div, .stText, .stMarkdown, .stSubheader, .stCaption, .stCheckbox, .stSelectbox label {
+    color: #002147 !important;
+}
+
+/* Tab labels */
+.stTabs [role="tab"] {
+    color: #002147 !important;
+    font-weight: bold;
+}
+
+/* Tab seleccionado */
+.stTabs [aria-selected="true"] {
+    color: #001a33 !important;
 }
 
 /* Botones */
 .stButton>button {
     background-color: #0b5fa4;
-    color: white;
+    color: white !important;
     font-weight: bold;
     border-radius: 10px;
     padding: 0.6em 1.2em;
     border: none;
+}
+
+/* Dataframe (tablas) */
+.dataframe, .stDataFrame, .stTable {
+    color: #002147 !important;
+}
+
+/* Métricas */
+[data-testid="stMetricDelta"] {
+    color: #002147 !important;
 }
 
 </style>
