@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Texto en markdown, widgets, labels, tabs */
 p, label, span, div, .stText, .stMarkdown, .stSubheader, .stCaption, .stCheckbox, .stSelectbox label {
-    color: #002147 !important;
+    color: #083faf !important;
 }
 
 /* Tab labels */
