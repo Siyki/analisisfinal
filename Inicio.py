@@ -41,7 +41,7 @@ st.markdown(
 
 # --- AGREGAR IMAGEN OLA ---
 try:
-    ola = Image.open("ola.png")
+    ola = Image.open("ola.jpg")
     st.image(ola, caption="Ola sensor-friendly 🌊", use_column_width=True)
 except:
     st.info("⚠️ No se encontró la imagen 'ola.png'. Colócala en la carpeta del proyecto.")
